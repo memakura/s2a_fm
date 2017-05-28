@@ -3,7 +3,11 @@
 ## インストール
 
 1. FirmataPlus のインストール: https://github.com/MrYsLab/PyMata/tree/master/ArduinoSketch より library.zip をダウンロードし，Arduino のライブラリフォルダへ展開 (例: c:\users\<username>\Documents\Arduino)
-1. s2a_fm のインストール dist/s2a_fm-1.5-amd64.msi (インストール先の例: "C:\Program Files\s2a_fm\s2a_fm.exe")
+1. s2a_fm のインストール dist/s2a_fm-1.5-amd64.msi
+    1. https://github.com/memakura/s2a_fm/blob/develop/dist/s2a_fm-1.5-amd64.msi にて Download
+    1. s2a_fm-1.5-amd64.msi を実行
+    1. 「WindowsによってPCが保護されました」と出ば場合は，[詳細情報] -> [実行]
+    1. インストール先の例: "C:\Program Files\s2a_fm\s2a_fm.exe" (以下ではここにインストールしたことを仮定)
 1. COMポートの設定
   Arduino IDE もしくはデバイスマネージャーで Arduino の接続されている COMポート番号 を確認 (以下 COM7 とする)
     1. デスクトップの s2a_fm のショートカットにて，リンク先を `"C:\Program Files\s2a_fm\s2a_fm.exe" COM7` のようにする (Default: COM5)
