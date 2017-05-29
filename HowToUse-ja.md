@@ -1,20 +1,27 @@
 # s2a_fm インストーラ版使用方法
 
+特徴：Pythonのインストールが不要
+
 ## インストール
 
-1. FirmataPlus のインストール: https://github.com/MrYsLab/PyMata/tree/master/ArduinoSketch より library.zip をダウンロードし，Arduino のライブラリフォルダへ展開 (例: c:\users\<username>\Documents\Arduino)
-1. s2a_fm のインストール dist/s2a_fm-1.5-amd64.msi
-    1. https://github.com/memakura/s2a_fm/blob/develop/dist/s2a_fm-1.5-amd64.msi にて Download
-    1. s2a_fm-1.5-amd64.msi を実行
-    1. 「WindowsによってPCが保護されました」と出ば場合は，[詳細情報] -> [実行]
+1. FirmataPlus のインストール
+    1. https://github.com/MrYsLab/PyMata/tree/master/ArduinoSketch より library.zip をダウンロード
+    1. Arduino のライブラリフォルダへ展開 (例: c:\users\<username>\Documents\Arduino)
+1. s2a_fm のインストール
+    1. https://github.com/memakura/s2a_fm/blob/develop/dist/s2a_fm-1.5-amd64.msi にて [Download] を選ぶ
+    1. ダウンロードされた s2a_fm-1.5-amd64.msi を実行
+        1. Windows8以上では「WindowsによってPCが保護されました」と出る場合ので，[詳細情報] をクリックして [実行]
+        1. Windows7では「発行元が不明」と出るが[実行]
+        1. （このほかウイルスチェックソフトでも発行元が不明に関して何かしら警告が出る可能性あり）
     1. インストール先の例: "C:\Program Files\s2a_fm\s2a_fm.exe" (以下ではここにインストールしたことを仮定)
 1. COMポートの設定
-  Arduino IDE もしくはデバイスマネージャーで Arduino の接続されている COMポート番号 を確認 (以下 COM7 とする)
+    1. Arduino IDE もしくはデバイスマネージャーで Arduino の接続されている COMポート番号 を確認 (以下 COM7 とする)
     1. デスクトップの s2a_fm のショートカットにて，リンク先を `"C:\Program Files\s2a_fm\s2a_fm.exe" COM7` のようにする (Default: COM5)
 
 ## 使用方法
 
 1. Arduino 側の設定
+    1. Arduino IDEを立ち上げる
     1. IDEの「ファイル」 -> 「スケッチの例」 -> Firmata -> StandardFirmataPlus を読み込み，Arduino へ書き込む
 1. Scratch2 側の設定
     1. Scratch2 offline editor を立ち上げる
