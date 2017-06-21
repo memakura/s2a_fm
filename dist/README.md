@@ -29,6 +29,10 @@ Pythonのインストールが不要
     1. "C:\Program Files\s2a_fm\work\s2a_fm_ja2.s2e" を選択（このファイルは別の分かりやすい場所にコピーしておいてもよい) (他の言語は ScratchFiles/ExtensionDescriptors)
 1. デスクトップ上の s2a_fm を立ち上げて，最後に「Scratch detected! Ready to rock and roll...」が表示されれば起動完了
 
+## デバッグ用ログ出力先
+
+- C:\Users\(ユーザ名)\AppData\Local\s2a_fm\log\s2a_fm_debugging.log
+
 ## トラブルシューティング
 
 - ウィンドウがすぐに閉じる場合
