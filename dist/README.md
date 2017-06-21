@@ -1,9 +1,11 @@
-# s2a_fm インストーラ版使用方法
+# s2a_fm インストーラ
+Scratch 2 オフラインエディタから Auduionoを制御
 
-Pythonのインストールが不要
+![s2a_fm](https://github.com/memakura/s2a_fm/blob/develop/images/ScratchArduino.png)
+- MrYsLabの s2a_fm を利用
+- Pythonのインストール不要
 
 ## インストール
-
 1. FirmataPlus のインストール
     1. https://github.com/MrYsLab/PyMata/tree/master/ArduinoSketch より library.zip をダウンロード
     1. Arduino のライブラリフォルダへ展開 (例: c:\users\<username>\Documents\Arduino)
@@ -19,7 +21,6 @@ Pythonのインストールが不要
     1. デスクトップの s2a_fm のショートカットにて，リンク先を `"C:\Program Files\s2a_fm\s2a_fm.exe" COM7` のようにする (Default: COM5)
 
 ## 使用方法
-
 1. Arduino 側の設定
     1. Arduino IDEを立ち上げる
     1. IDEの「ファイル」 -> 「スケッチの例」 -> Firmata -> StandardFirmataPlus を読み込み，Arduino へ書き込む
@@ -30,11 +31,9 @@ Pythonのインストールが不要
 1. デスクトップ上の s2a_fm を立ち上げて，最後に「Scratch detected! Ready to rock and roll...」が表示されれば起動完了
 
 ## デバッグ用ログ出力先
-
 - C:\Users\(ユーザ名)\AppData\Local\s2a_fm\log\s2a_fm_debugging.log
 
 ## トラブルシューティング
-
 - ウィンドウがすぐに閉じる場合
     - COMポートを再確認
     - 他に s2a_fm が立ち上がっていないか確認
@@ -42,6 +41,5 @@ Pythonのインストールが不要
     -「Could not instantiate PyMata - is your Arduino plugged in?」が表示されるなら，再度COMポートを確認．
  
  ## ビルド環境
-
 - Python 2.7 (64bit) + cx_Freeze
 - Windows 10 (64bit)
